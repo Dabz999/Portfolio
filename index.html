@@ -10,16 +10,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="hero">
+    <div id="home" class="hero">
         <div class="herocont">
             <div class="nav">
                 <div class="imgcont">
-                    <p id="logo"> <button class="logobtn"><img class="logoimg" src="./res/fesr3.png" alt="Logo" width="50px" height="50px"></button></p>
+                    <a href="#home"><p style="color: #e5e7eb; height: fit-content; margin-top: 35px; margin-left: 80px; font-size: 18px;">Home</p></a>
+                    
                 </div>
                 <div class="navitems">
-                    <p class="nav-item">About me</p>
-                    <p class="nav-item">Contact me</p>
-                    <p class="nav-item">Testimonials</p>
+                    <a href="#about"><p class="nav-item">About me</p></a>
+                    <a href="#techs"><p class="nav-item">Techstack</p></a>
+                    <a href="#projects"> <p class="nav-item">Projects</p></a>
+                    
                 </div>
             </div> 
             <div class="heromain">
@@ -38,7 +40,7 @@
         </div>
     </div> <br>
 
-    <div class="mid-sec">
+    <div id="techs" class="mid-sec">
         <p class="midtext">My Tech Stack</p>
         <div class="midboxcont">
             <div class="midbox"><img src="./res/htmll.png" alt="Html logo"></div>
@@ -48,10 +50,35 @@
         </div>
     </div>
 
-    <div class="mid-sec2">
-       <i> <p class="mid-sec2text">Lorem ipsum dolor sit <br>amet consectetur, adipisicing elit. Quod, <br>pariatur laboriosam velit obcaecati rerum <br>quia vitae dignissimos. Nihil pariatur cumque <br>eius in, dolores temporibus sint ut, iste <br>magnam doloribus distinctio!</p>
-        </i>
+    <div id="about" class="mid-sec2">
+        <p class="mid-sec2text"> <b>Hey there!</b><br> My name is <strong>Dabira Omotade</strong>, I'm a frontend web-developer and an aspiring <strong>software engineer.</strong> <br>I will create a responsive, mobile-friendly, personal or business website that will - <strong>Boost your online presence, make your business look more professional and definitely bring in more customers/clients.</strong> <br><br> <b style="color: green;">More customers/clients = More money.<br> Think about that :)</b> 
     </div>
+
+    <div id="projects" class="mid-sec3">
+    <p class="midtext">My Projects <br> </p> <br>
+    <i style="align-self: center; justify-self: center; display: flex;">*click to view*</i>
+    <div class="mid-sec3projcont">
+        <a target="_blank" href="https://lekzydonhaircut.netlify.app/" style="cursor: pointer; display: inline-block;">
+            <iframe src="https://lekzydonhaircut.netlify.app/" 
+                    width="768px" 
+                    height="600px" 
+                    scrolling="no" 
+                    frameborder="0"
+                    style="pointer-events: none;">
+            </iframe>
+        </a>
+        
+        <a target="_blank" href="https://lakesidebarbersalon.netlify.app/" style="cursor: pointer; display: inline-block;">
+            <iframe src="https://lakesidebarbersalon.netlify.app/" 
+                    width="400px" 
+                    height="600px" 
+                    frameborder="0" 
+                    scrolling="no"
+                    style="pointer-events: none;">
+            </iframe>
+        </a>
+    </div>
+</div>
 
     
 </body>
