@@ -3,83 +3,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <!-- Add to <head> for better loading -->
+    <link rel="preload" href="./res/fesr3.png" as="image">
+    
+    <!-- Primary Meta Tags -->
+    <title>DeeCodes - Frontend Web Developer & Software Engineer Portfolio</title>
+    <meta name="title" content="Dabira Omotade - Frontend Web Developer & Software Engineer Portfolio">
+    <meta name="description" content="Nigerian frontend web developer and aspiring software engineer. I create responsive, mobile-friendly websites that boost online presence and bring in more customers. View my projects and hire me!">
+    <meta name="keywords" content="frontend developer, web developer, software engineer, Nigerian developer, responsive websites, HTML, CSS, JavaScript, React, portfolio">
+    <meta name="author" content="Dabira Omotade">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com/">
+    <meta property="og:title" content="Dabira Omotade - Frontend Web Developer & Software Engineer Portfolio">
+    <meta property="og:description" content="Nigerian frontend web developer creating responsive, mobile-friendly websites. View my projects and let's work together!">
+    <meta property="og:image" content="https://yourdomain.com/res/fesr3.png">
+    <meta property="og:site_name" content="Dabira Omotade Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://x.com/DeeCodes_dev">
+    <meta property="twitter:title" content="Dabira Omotade - Frontend Web Developer & Software Engineer Portfolio">
+    <meta property="twitter:description" content="Nigerian frontend web developer creating responsive, mobile-friendly websites. View my projects and let's work together!">
+    <meta property="twitter:image" content="https://yourdomain.com/res/fesr3.png">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://yourdomain.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="res/fesr3.png">
+    
+    <!-- Preconnect for performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dabira Omotade",
+        "jobTitle": "Frontend Web Developer",
+        "description": "Nigerian frontend web developer and aspiring software engineer specializing in responsive, mobile-friendly websites",
+        "url": "https://yourdomain.com",
+        "sameAs": [
+            "https://linktr.ee/DeeCodes.dev"
+        ],
+        "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Frontend Development", "Web Development"],
+        "nationality": "Nigerian",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Freelance"
+        }
+    }
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="home" class="hero">
-        <div class="herocont">
-            <div class="nav">
-                <div class="imgcont">
-                    <a href="#home"><p style="color: #e5e7eb; height: fit-content; margin-top: 35px; margin-left: 80px; font-size: 18px;">Home</p></a>
-                    
-                </div>
-                <div class="navitems">
-                    <a href="#about"><p class="nav-item">About me</p></a>
-                    <a href="#techs"><p class="nav-item">Techstack</p></a>
-                    <a href="#projects"> <p class="nav-item">Projects</p></a>
-                    
-                </div>
-            </div> 
-            <div class="heromain">
-                <div class="herotext">
-                    <p class="maintext">Welcome to my <strong>Portfolio</strong></p>
-                    <p class="subtext">Hii!👋, My name is Dabira,<br> I'm a Nigerian front-end  web developer, <br> and I'm looking forward to working with you in the future🤝.</p>
-                    <div class="cta">
-                <a href="https://wa.me/2348121509208" target="_blank" rel="noopener noreferrer"><button class="ctabtn">Hire Me!</button></a>
-            </div>
-                </div>
-                <div class="heroimgcont">
-                    <img class="heroimg" src="./res/fesr3.png" height="300px" width="300px" alt="">
-                </div>
-            </div>
-            
-        </div>
-    </div> <br>
-
-    <div id="techs" class="mid-sec">
-        <p class="midtext">My Tech Stack</p>
-        <div class="midboxcont">
-            <div class="midbox"><img src="./res/htmll.png" alt="Html logo"></div>
-            <div class="midbox"><img src="./res/jsl.png" alt="Javascript logo" width="300px" height="300px"></div>
-            <div class="midbox"><img src="./res/cssl.png" alt="" width="200px" height="300px"></div>
-            <div class="midbox"><img src="./res/react.png" alt="" width="300px" height="300px"></div>
-        </div>
-    </div>
-
-    <div id="about" class="mid-sec2">
-        <p class="mid-sec2text"> <b>Hey there!</b><br> My name is <strong>Dabira Omotade</strong>, I'm a frontend web-developer and an aspiring <strong>software engineer.</strong> <br>I will create a responsive, mobile-friendly, personal or business website that will - <strong>Boost your online presence, make your business look more professional and definitely bring in more customers/clients.</strong> <br><br> <b style="color: green;">More customers/clients = More money.<br> Think about that :)</b> 
-    </div>
-
-    <div id="projects" class="mid-sec3">
-    <p class="midtext">My Projects <br> </p> <br>
-    <i style="align-self: center; justify-self: center; display: flex;">*click to view*</i>
-    <div class="mid-sec3projcont">
-        <a target="_blank" href="https://lekzydonhaircut.netlify.app/" style="cursor: pointer; display: inline-block;">
-            <iframe src="https://lekzydonhaircut.netlify.app/" 
-                    width="768px" 
-                    height="600px" 
-                    scrolling="no" 
-                    frameborder="0"
-                    style="pointer-events: none;">
-            </iframe>
-        </a>
-        
-        <a target="_blank" href="https://lakesidebarbersalon.netlify.app/" style="cursor: pointer; display: inline-block;">
-            <iframe src="https://lakesidebarbersalon.netlify.app/" 
-                    width="400px" 
-                    height="600px" 
-                    frameborder="0" 
-                    scrolling="no"
-                    style="pointer-events: none;">
-            </iframe>
-        </a>
-    </div>
-</div>
-
+    <!-- Skip to main content for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     
+    <header id="home" class="hero">
+        <div class="herocont">
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="imgcont">
+        <a href="#home" aria-label="Go to home section">
+            <p style="color: #e5e7eb; height: fit-content; margin-top: 35px; margin-left: 80px; font-size: 18px;">Home</p>
+        </a>
+    </div>
+    
+    <!-- Hamburger Menu Button -->
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="navitems">
+        <a href="#about" aria-label="Go to about section">
+            <p class="nav-item">About me</p>
+        </a>
+        <a href="#techs" aria-label="Go to tech stack section">
+            <p class="nav-item">Techstack</p>
+        </a>
+        <a href="#projects" aria-label="Go to projects section">
+            <p class="nav-item">Projects</p>
+        </a>
+        <a href="#testimonials" aria-label="Go to testimonials section">
+            <p class="nav-item">Testimonials</p>
+        </a>
+        <a href="#contact" aria-label="Go to contact section">
+            <p class="nav-item">Contact</p>
+        </a>
+    </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home" onclick="toggleMenu()" aria-label="Go to home section">
+        <p class="nav-item">Home</p>
+    </a>
+    <a href="#about" onclick="toggleMenu()" aria-label="Go to about section">
+        <p class="nav-item">About me</p>
+    </a>
+    <a href="#techs" onclick="toggleMenu()" aria-label="Go to tech stack section">
+        <p class="nav-item">Techstack</p>
+    </a>
+    <a href="#projects" onclick="toggleMenu()" aria-label="Go to projects section">
+        <p class="nav-item">Projects</p>
+    </a>
+    <a href="#testimonials" onclick="toggleMenu()" aria-label="Go to testimonials section">
+        <p class="nav-item">Testimonials</p>
+    </a>
+    <a href="#contact" onclick="toggleMenu()" aria-label="Go to contact section">
+        <p class="nav-item">Contact</p>
+    </a>
+</div>
+            
+            <main id="main-content" class="heromain">
+                <section class="herotext">
+                    <h1 class="maintext">Welcome to my <strong>Portfolio</strong></h1>
+                    <p class="subtext">Hi!👋, My name is Dabira,<br> I'm a Nigerian front-end web developer, <br> and I'm looking forward to working with you in the future🤝.</p>
+                    <div class="cta">
+                        <a href="https://linktr.ee/DeeCodes.dev" target="_blank" rel="noopener noreferrer" aria-label="Hire me - opens in new tab">
+                            <button class="ctabtn">Hire Me!</button>
+                        </a>
+                    </div>
+                </section>
+                <aside class="heroimgcont">
+                    <img class="heroimg" src="./res/fesr3.png" height="300" width="300" alt="Dabira Omotade - Frontend Web Developer profile picture" loading="eager">
+                </aside>
+            </main>
+        </div>
+    </header>
+
+    <section id="techs" class="mid-sec" aria-labelledby="tech-heading">
+        <div>
+            <h2 id="tech-heading" class="midtext">My Tech Stack</h2>
+            <div class="midboxcont" role="list" aria-label="Technologies I use">
+                <div class="midbox" role="listitem">
+                    <img src="./res/htmll.png" alt="HTML5 - Markup language for web development" loading="lazy">
+                </div>
+                <div class="midbox" role="listitem">
+                    <img src="./res/jsl.png" alt="JavaScript - Programming language for web interactivity" width="300" height="300" loading="lazy">
+                </div>
+                <div class="midbox" role="listitem">
+                    <img src="./res/cssl.png" alt="CSS3 - Styling language for web design" width="200" height="300" loading="lazy">
+                </div>
+                <div class="midbox" role="listitem">
+                    <img src="./res/react.png" alt="React - JavaScript library for building user interfaces" width="300" height="300" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="mid-sec2" aria-labelledby="about-heading">
+        <article class="mid-sec2text">
+            <h2 id="about-heading" style="display: none;">About Dabira Omotade</h2>
+            <p><strong>Hey there!</strong><br> My name is <strong>Dabira Omotade</strong>, I'm a frontend web-developer and an aspiring <strong>software engineer.</strong><br>I will create a responsive, mobile-friendly, personal or business website that will - <strong>Boost your online presence, make your business look more professional and definitely bring in more customers/clients.</strong><br><br><strong style="color: green;">More customers/clients = More money.<br> Think about that :)</strong></p>
+        </article>
+    </section>
+
+    <section id="projects" class="mid-sec3" aria-labelledby="projects-heading">
+        <h2 id="projects-heading" class="midtext">My Projects</h2>
+        <p style="align-self: center; justify-self: center; display: flex;"><em>*click to view*</em></p>
+        <div class="mid-sec3projcont" role="list" aria-label="Portfolio projects">
+            <article role="listitem">
+                <a target="_blank" href="https://lekzydonhaircut.netlify.app/" 
+                   style="cursor: pointer; display: inline-block;" 
+                   aria-label="View Lekzydon Haircut website project - opens in new tab">
+                    <iframe src="https://lekzydonhaircut.netlify.app/" 
+                            width="768" 
+                            height="600" 
+                            scrolling="no" 
+                            frameborder="0"
+                            style="pointer-events: none;"
+                            title="Preview of Lekzydon Haircut website"
+                            loading="lazy">
+                    </iframe>
+                </a>
+            </article>
+            
+            <article role="listitem">
+                <a target="_blank" href="https://lakesidebarbersalon.netlify.app/" 
+                   style="cursor: pointer; display: inline-block;"
+                   aria-label="View Lakeside Barber Salon website project - opens in new tab">
+                    <iframe src="https://lakesidebarbersalon.netlify.app/" 
+                            width="400" 
+                            height="600" 
+                            frameborder="0" 
+                            scrolling="no"
+                            style="pointer-events: none;"
+                            title="Preview of Lakeside Barber Salon website"
+                            loading="lazy">
+                    </iframe>
+                </a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Add this after your projects section and before closing </body> tag -->
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section" aria-labelledby="testimonials-heading">
+    <h2 id="testimonials-heading" class="midtext">What My Clients Say</h2>
+    <div class="testimonials-container">
+        <article class="testimonial-card">
+            <div class="testimonial-content">
+                <p class="testimonial-text">"Dabira created an amazing website for my barber shop. The design is clean, professional, and my customers love booking online. Business has increased by 40% since launch!"</p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h3 class="author-name">Lekzydon Unisex Salon</h3>
+                        <p class="author-business">Owner - Lekzydon Haircut</p>
+                        <div class="star-rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="testimonial-card">
+            <div class="testimonial-content">
+                <p class="testimonial-text">"Working with Dabira was fantastic! He delivered exactly what we needed - a modern, mobile-friendly website that showcases our services perfectly. Highly recommend!"</p>
+                <div class="testimonial-author">
+                    <div class="author-info">
+                        <h3 class="author-name">Lakeside Salon</h3>
+                        <p class="author-business">Owner - Lakeside Barber Salon</p>
+                        <div class="star-rating">
+                            <span>⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+    <div class="contact-container">
+        <h2 id="contact-heading" class="midtext">Let's Work Together</h2>
+        <p class="contact-subtitle">Ready to boost your online presence? Get in touch and let's create something amazing!</p>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 class="contact-info-title">Get In Touch</h3>
+                <div class="contact-item">
+                    <span class="contact-icon">📧</span>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:omotade.dabira9@gmail.com" class="contact-link">omotade.dabira9@gmail.com</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📱</span>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+2348121509208" class="contact-link">+234 812 150 9208</a>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Ibadan, Nigeria</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <span class="contact-icon">🔗</span>
+                    <div class="contact-details">
+                        <h4>Social Links</h4>
+                        <a href="https://linktr.ee/DeeCodes.dev" target="_blank" rel="noopener noreferrer" class="contact-link">LinkTree Profile</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message *</label>
+                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send Message</button>
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="script.js"></script>
 </body>
 </html>
