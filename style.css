@@ -1,38 +1,35 @@
 body{
     font-family: outfit;
+    margin: 0;           /* Add this */
+    padding: 0;          /* Add this */
 }
+
 .hero{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
     background-color: #1F2937;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    padding-bottom: 20px;
     width: 100%;
     height: fit-content;
     border: 2px solid black;
-    
+    /* Removed position: absolute and related properties */
 }
 
 .herocont{
     width: fit-content;
     height: fit-content;
-    
     display:block;
-    
-    
 }
+
 .nav{
     display: flex;
     justify-content: center;
     align-items: center;
     height: fit-content;
-  
     margin: 0 auto;
-
 }
+
 .nav-item{
     flex: 1;
     width: max-content;
@@ -47,16 +44,18 @@ body{
 .navitems{
     display: flex;
     margin-left: 400px;
-    
 }
+
 .imgcont{
     width: 100px;
     height: 100px;
     flex: 4;
 }
+
 #logo{
     flex:4;
 }
+
 .logobtn{
     border-radius: 100%;
     background-color: transparent;
@@ -69,6 +68,7 @@ body{
     height: 100px;
     transition: 1s;
 }
+
 .logoimg{
     border-radius: 100%;
     align-items: center;
@@ -77,8 +77,8 @@ body{
 
 .herotext{
     flex: 1;
-    
 }
+
 .maintext{
     color: #f9faf8;
     font-size: 48px;
@@ -96,7 +96,6 @@ body{
     color: #f9faf8;
     align-items: center;
     justify-content: space-between;
-   
     padding: 10px;
 }
 
@@ -126,7 +125,6 @@ a{
     font-weight: 300;
     font-family: outfit;
     line-height: 1;
-   
 }
 
 .ctabtn:hover{
@@ -136,11 +134,50 @@ a{
     font-weight: 300;
 }
 
-
 strong{
     color: grey;
 }
 
+.midsec{
+    padding: 50px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
 .midtext{
-    color: white;
+    justify-self: center;
+    color: grey;
+    font-size: 48px;
+    line-height: 0.1;
+}
+
+.midboxcont{
+    display: flex;
+    height: fit-content;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.midbox{
+    flex: 3;
+    height: fit-content;
+}
+
+.mid-sec2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E5E7EB;
+    padding-bottom: 20px;
+    width: 100%;
+    height: fit-content;
+    font: italic;
+    font-weight: light;
+    font-size: 36px;
+    color: #1f2937;
+    line-height: 1.3;
 }
